@@ -17,7 +17,7 @@ class Solution {
     int diameter = 0;
     public int diameterOfBinaryTree(TreeNode root) {
         height(root);
-        return diameter - 1;
+        return diameter - 1;//no.of edges
     }
     int height(TreeNode node){
         if(node  == null){
