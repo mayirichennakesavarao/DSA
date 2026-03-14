@@ -8,12 +8,13 @@ class Solution {
             }
         }
         for(int i=0;i<candies.length;i++){
-           candies[i] += extraCandies;
-           if(candies[i] >= max){
-            ans.add(true);
-           }else{
-            ans.add(false);
-           }  
+        //    candies[i] += extraCandies;
+        //    if(candies[i] >= max){
+        //     ans.add(true);
+        //    }else{
+        //     ans.add(false);
+        //    }  
+        ans.add(candies[i] + extraCandies >= max);
         }
         return ans;
 
